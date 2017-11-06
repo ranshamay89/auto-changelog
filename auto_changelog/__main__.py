@@ -23,10 +23,9 @@ import sys
 
 import docopt
 
-from .parser import group_commits, traverse
-from .generator import generate_changelog
-from . import __version__
-
+from parser import group_commits, traverse
+from generator import generate_changelog
+from auto_changelog import __version__
 
 def main():
     args = docopt.docopt(__doc__, version=__version__)

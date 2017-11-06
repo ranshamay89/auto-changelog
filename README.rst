@@ -25,7 +25,7 @@ Otherwise, you can install from source by cloning the repository from Github::
 
 And install the package::
 
-    python3 setup.py install
+    python setup.py install
 
 
 Usage
@@ -36,7 +36,7 @@ Calling The Program
 
 The package is callable using the `python -m` shortcut::
 
-    python3 -m auto_changelog
+    python -m auto_changelog
 
 Or alternatively, you can use the provided command::
 

@@ -6,7 +6,7 @@ the releases they correspond to.
 
 import git
 
-from .models import Commit, Tag, Unreleased
+from models import Commit, Tag, Unreleased
 
 
 
