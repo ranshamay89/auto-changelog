@@ -1,7 +1,7 @@
 from jinja2 import FileSystemLoader, Environment
 
 
-def generate_changelog(template_dir, title, description, unreleased, tags):
+def generate_changelog(template_dir, title, description, unreleased, tags, repo_name):
     tags = sorted(tags, key=lambda t: t.date)
 
     # Set up the templating engine
@@ -13,6 +13,7 @@ def generate_changelog(template_dir, title, description, unreleased, tags):
         title=title,
         description=description,
         unreleased=unreleased,
-        tags=reversed(tags))
+        tags=reversed(tags),
+        repo_name=repo_name)
 
     return changelog
